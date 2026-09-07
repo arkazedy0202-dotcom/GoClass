@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- GoClass brand -->
+    <color name="goclass_navy_950">#071426</color>
+    <color name="goclass_navy_900">#0B1F3A</color>
+    <color name="goclass_navy_800">#12345B</color>
+    <color name="goclass_blue_700">#1557B0</color>
+    <color name="goclass_blue_600">#236ED2</color>
+    <color name="goclass_blue_500">#3D8BEE</color>
+    <color name="goclass_blue_100">#DCEBFF</color>
+    <color name="goclass_blue_50">#EEF5FF</color>
+    <color name="goclass_on_dark_soft">#22FFFFFF</color>
+    <color name="goclass_on_dark_outline">#33FFFFFF</color>
+
+    <!-- Cool neutral surfaces -->
+    <color name="goclass_background">#F3F6FA</color>
+    <color name="goclass_surface">#FFFFFF</color>
+    <color name="goclass_surface_tinted">#EAF0F8</color>
+    <color name="goclass_outline">#D6E0EC</color>
+    <color name="goclass_divider">#E3EAF2</color>
+    <color name="goclass_text_primary">#10243E</color>
+    <color name="goclass_text_secondary">#536780</color>
+    <color name="goclass_text_muted">#7C8DA3</color>
+
+    <!-- Semantic -->
+    <color name="goclass_success">#167A65</color>
+    <color name="goclass_success_surface">#E5F4F0</color>
+    <color name="goclass_danger">#B42335</color>
+    <color name="goclass_danger_surface">#FCECEF</color>
+    <color name="goclass_scrim">#66071426</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

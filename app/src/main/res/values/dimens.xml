@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_2xs">4dp</dimen>
+    <dimen name="space_xs">8dp</dimen>
+    <dimen name="space_sm">12dp</dimen>
+    <dimen name="space_md">16dp</dimen>
+    <dimen name="space_lg">20dp</dimen>
+    <dimen name="space_xl">24dp</dimen>
+    <dimen name="space_2xl">32dp</dimen>
+    <dimen name="radius_sm">8dp</dimen>
+    <dimen name="radius_md">12dp</dimen>
+    <dimen name="radius_lg">16dp</dimen>
+    <dimen name="radius_xl">20dp</dimen>
+    <dimen name="elevation_low">1dp</dimen>
+    <dimen name="elevation_nav">6dp</dimen>
+    <dimen name="touch_target">48dp</dimen>
+    <dimen name="bottom_nav_height">72dp</dimen>
+    <dimen name="screen_horizontal">20dp</dimen>
+    <dimen name="screen_top">24dp</dimen>
+    <dimen name="content_bottom_safe">24dp</dimen>
+</resources>

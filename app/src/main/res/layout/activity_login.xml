@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Lengkungan Biru di Atas -->
+    <ImageView
+        android:id="@+id/ivWaveBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_wave_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Teks "Welcome Back," -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Welcome Back,"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Teks "Log In!" -->
+    <TextView
+        android:id="@+id/tvLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Log In!"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome" />
+
+    <!-- Logo GoClass -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="28dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:scaleX="1.25"
+            android:scaleY="1.25"
+            android:src="@drawable/goclass_logo_tr" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Wadah Form Login -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="32dp"
+        android:paddingTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivWaveBackground">
+
+        <!-- Toggle Pilihan -->
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggleRole"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="24dp"
+            app:checkedButton="@id/btnSiswa"
+            app:singleSelection="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSiswa"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Siswa"
+                android:textColor="#2F80ED"
+                app:strokeColor="#2F80ED" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGuru"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Guru"
+                android:textColor="#2F80ED"
+                app:strokeColor="#2F80ED" />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <!-- Input Identitas -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilInput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxStrokeColor="#2F80ED"
+            app:hintTextColor="#666666">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="NIS Siswa"
+                android:inputType="text|textNoSuggestions"
+                android:padding="16dp"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Input Password -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxStrokeColor="#2F80ED"
+            app:endIconMode="password_toggle"
+            app:hintTextColor="#666666">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Tombol Login -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:text="Log in"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="#2F80ED"
+            app:cornerRadius="50dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

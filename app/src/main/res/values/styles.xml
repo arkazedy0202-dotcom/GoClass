@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ShapeAppearance.GoClass.Dialog" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="TextAppearance.GoClass.Eyebrow" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/goclass_text_muted</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.06</item>
+    </style>
+
+    <style name="TextAppearance.GoClass.PageTitle" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/goclass_text_primary</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+    </style>
+
+    <style name="TextAppearance.GoClass.Section" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/goclass_blue_700</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="TextAppearance.GoClass.CardTitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/goclass_text_primary</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextAppearance.GoClass.Body" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/goclass_text_secondary</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+    <style name="TextAppearance.GoClass.Meta" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/goclass_text_muted</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="Widget.GoClass.Card" parent="">
+        <item name="cardBackgroundColor">@color/goclass_surface</item>
+        <item name="cardCornerRadius">@dimen/radius_lg</item>
+        <item name="cardElevation">@dimen/elevation_low</item>
+        <item name="cardUseCompatPadding">false</item>
+    </style>
+
+    <style name="Widget.GoClass.TeacherCard" parent="Widget.GoClass.Card">
+        <item name="android:layout_marginBottom">@dimen/space_xs</item>
+    </style>
+
+    <style name="Widget.GoClass.DayChip" parent="Widget.GoClass.Card">
+        <item name="cardBackgroundColor">@color/goclass_blue_50</item>
+        <item name="cardCornerRadius">@dimen/radius_sm</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="Widget.GoClass.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="android:minHeight">44dp</item>
+        <item name="android:minWidth">88dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="backgroundTint">@color/goclass_blue_600</item>
+        <item name="cornerRadius">@dimen/radius_md</item>
+        <item name="android:elevation">0dp</item>
+        <item name="rippleColor">@color/goclass_blue_100</item>
+    </style>
+
+    <style name="Widget.GoClass.Button.Danger" parent="Widget.MaterialComponents.Button">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/goclass_danger</item>
+        <item name="backgroundTint">@color/goclass_danger_surface</item>
+        <item name="cornerRadius">@dimen/radius_md</item>
+        <item name="android:elevation">0dp</item>
+        <item name="rippleColor">@color/goclass_danger</item>
+    </style>
+
+    <style name="Widget.GoClass.ToggleButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/toggle_text_color</item>
+        <item name="android:textSize">12sp</item>
+        <item name="backgroundTint">@color/toggle_background_color</item>
+        <item name="cornerRadius">@dimen/radius_md</item>
+        <item name="strokeColor">@color/goclass_outline</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="rippleColor">@color/goclass_blue_100</item>
+    </style>
+
+    <style name="Widget.GoClass.BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="android:background">@color/goclass_surface</item>
+        <item name="itemIconTint">@color/nav_item_color</item>
+        <item name="itemTextColor">@color/nav_item_color</item>
+        <item name="itemRippleColor">@color/nav_ripple_color</item>
+        <item name="itemIconSize">22dp</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="Widget.GoClass.StatusBadge" parent="">
+        <item name="android:background">@drawable/bg_status_success</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/goclass_success</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+</resources>

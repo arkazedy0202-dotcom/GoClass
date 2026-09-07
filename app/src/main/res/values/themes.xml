@@ -1,0 +1,30 @@
+<resources>
+    <style name="Theme.GoClass" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/goclass_blue_600</item>
+        <item name="colorPrimaryVariant">@color/goclass_navy_900</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/goclass_blue_500</item>
+        <item name="colorSecondaryVariant">@color/goclass_blue_700</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSurface">@color/goclass_surface</item>
+        <item name="colorOnSurface">@color/goclass_text_primary</item>
+        <item name="colorError">@color/goclass_danger</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:colorAccent">@color/goclass_blue_600</item>
+        <item name="android:statusBarColor">@color/goclass_navy_900</item>
+        <item name="android:navigationBarColor">@color/goclass_surface</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.GoClass.MaterialAlertDialog</item>
+        <item name="bottomNavigationStyle">@style/Widget.GoClass.BottomNavigation</item>
+    </style>
+
+    <style name="ThemeOverlay.GoClass.MaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorPrimary">@color/goclass_blue_600</item>
+        <item name="colorSurface">@color/goclass_surface</item>
+        <item name="colorOnSurface">@color/goclass_text_primary</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.GoClass.Dialog</item>
+    </style>
+</resources>
